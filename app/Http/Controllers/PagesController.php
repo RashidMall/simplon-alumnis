@@ -13,8 +13,8 @@ class PagesController extends Controller
     }
 
     public function about(){
-        $title = 'About Alumnis';
-        return view('pages.about')->with('title', $title);
+        $title = 'Forum';
+        return view('pages.forum')->with('title', $title);
     }
 
     public function services(){
@@ -22,6 +22,6 @@ class PagesController extends Controller
             'title' => 'Alumnis Services!',
             'services' => ['Web Design', 'Programming', 'Data Base']
         );
-        return view('pages.services')->with($data);
+        return view('pages.oportunities')->with($data);
     }
 }
