@@ -8,6 +8,9 @@
         <title>{{ config('app.name', 'Alumnis') }}</title>
     </head>
     <body>
-        @yield('content')
+        @include('includes.navbar')
+        <div class="container">
+            @yield('content')
+        </div>
     </body>
 </html>
