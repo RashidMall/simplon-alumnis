@@ -42,7 +42,12 @@ class PostsController extends Controller
             'content' => 'required'
         ]);
 
-        return "store";
+        $post = new Post;
+        $post->title = $request->input('title');
+        $post->content = $request->input('content');
+        $post->save();
+
+        return redirect('/posts')->with('success', 'Post was created');
     }
 
     /**
