@@ -12,4 +12,5 @@
     @else
         <p>No posts</p>
     @endif
+    {{$posts->links()}}
 @endsection
