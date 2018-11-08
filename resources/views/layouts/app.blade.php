@@ -10,6 +10,7 @@
     <body>
         @include('includes.navbar')
         <main role="main" class="container">
+            @include('includes.messages')
             @yield('content')
         </main>
     </body>
