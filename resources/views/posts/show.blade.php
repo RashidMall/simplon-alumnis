@@ -5,6 +5,8 @@
     <h1> {{$post->title}} </h1>
     <small>Written on {{$post->created_at}}</small>
     <div>
-        {{$post->content}}
+        {!!$post->content!!}
     </div>
+    <hr>
+    <a href="/posts/{{$post->id}}/edit" class="btn btn-light">Edit</a>
 @endsection
