@@ -9,8 +9,8 @@
     </head>
     <body>
         @include('includes.navbar')
-        <div class="container">
+        <main role="main" class="container">
             @yield('content')
-        </div>
+        </main>
     </body>
 </html>
